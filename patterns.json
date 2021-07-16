@@ -1,5 +1,5 @@
 {
-    "EMAIL_REG" : "([\\w\\.\\d]+\\@[\\w\\d]+\\.[\\w\\d]+)",
+    "EMAIL_REG" : "[^@ \\t\\r\\n]+@[^@ \\t\\r\\n]+\\.[^@ \\t\\r\\n]+",
     "POSSIBLE_ID_REG" : "\\d{8,10}",
     "POSSIBLE_ID_REG2" : "[0]\\d{5,}",
     "PT_POSTAL_CODE" : "\\b\\d{4}-\\d{3}\\b",
