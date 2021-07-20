@@ -15,12 +15,16 @@ class Redactor:
     
         """ Function to get all the lines """
 
+        result = []
+
         for line in lines:
         
             # matching the regex to each line
             if re.search(pattern, line, re.IGNORECASE):
                 search = re.search(pattern, line, re.IGNORECASE)                
-                yield search.group(0)
+                result.append(search.group(0))
+        
+        return result
 
     # constructor
     def __init__(self, pathInput, pathOutput):
